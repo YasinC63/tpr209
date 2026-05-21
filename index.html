@@ -6,35 +6,44 @@
     <link rel="stylesheet" href="style.css">
     <title>Formulaire de contact</title>
 </head>
+
 <body>
 
-<form class="formulaire">
-    <h1>Formulaire de contact</h1>
+<main>
+<form class="formulaire" aria-labelledby="titre-formulaire">
 
-    <label>Votre pseudo*</label>
-    <input type="text" required placeholder="Votre pseudo">
+    <h1 id="titre-formulaire">Formulaire de contact</h1>
 
-    <label>Votre mot de passe*</label>
-    <input type="password" required placeholder="Votre mot de passe">
+    <!-- PSEUDO -->
+    <label for="pseudo">Votre pseudo *</label>
+    <input id="pseudo" type="text" required placeholder="Votre pseudo">
 
-    <label>Votre e-mail*</label>
-    <input type="email" required placeholder="Votre e-mail">
+    <!-- MOT DE PASSE -->
+    <label for="password">Votre mot de passe *</label>
+    <input id="password" type="password" required placeholder="Votre mot de passe">
 
-    <label>Objet du message*</label>
-    <select required>
+    <!-- EMAIL -->
+    <label for="email">Votre e-mail *</label>
+    <input id="email" type="email" required placeholder="Votre e-mail">
+
+    <!-- SELECT -->
+    <label for="objet">Objet du message *</label>
+    <select id="objet" required>
         <option value="">-- Choisissez une option --</option>
         <option value="question">J'ai une question</option>
         <option value="suggestion">Je fais une suggestion</option>
-        <option value="probleme">Je rencontre un problème</option>
+        <option value="probleme">Je rencontre un problème</option>https://github.com/YasinC63/tpr209/blob/main/index.html
         <option value="autre">Autre</option>
     </select>
 
-    <label>Votre message*</label>
-    <textarea required placeholder="Votre message"></textarea>
+    <!-- TEXTAREA -->
+    <label for="message">Votre message *</label>
+    <textarea id="message" required placeholder="Votre message"></textarea>
 
-    <label>Niveau d'urgence :</label>
+    <!-- RADIO -->
+    <fieldset class="radio-group">
+        <legend>Niveau d'urgence *</legend>
 
-    <div class="radio-group">
         <label>
             <input type="radio" name="urgence" value="urgent" required>
             Urgent
@@ -49,15 +58,21 @@
             <input type="radio" name="urgence" value="lent">
             Lent
         </label>
-    </div>
+    </fieldset>
 
-        <label class="checkbox">
-            <input type="checkbox" required>
-            J'ai lu et j'accepte la politique de confidentialité du site.
-        </label>
+    <!-- CHECKBOX -->
+    <label class="checkbox">
+        <input type="checkbox" required>
+        J'ai lu et j'accepte la politique de confidentialité du site.
+    </label>
 
-        <button type="submit" class="btn-envoyer">Envoyer</button>
+    <!-- SUBMIT -->
+    <button type="submit" class="btn-envoyer">
+        Envoyer
+    </button>
+
 </form>
+</main>
 
 </body>
 </html>
