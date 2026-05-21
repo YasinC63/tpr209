@@ -36,6 +36,15 @@ button:focus {
 }
 
 
+    .radio-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 15px;
+}
+
+
+
 .checkbox {
     display: flex;
     align-items: center;
@@ -44,64 +53,6 @@ button:focus {
 }
 
 
-.btn-envoyer {
-    height: 40px;
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-.btn-envoyer:hover {
-    background-color: #1558b0;
-}.formulaire {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
-}
-
-/* Champs */
-input, select, textarea {
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 16px; /* important WCAG (lisibilité) */
-}
-
-/* textarea */
-textarea {
-    height: 120px;
-}
-
-/* Focus clavier (WCAG très important) */
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: 3px solid #1a73e8;
-    outline-offset: 2px;
-}
-
-/* radios */
-.radio-group {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* checkbox */
-.checkbox {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-}
-
-/* bouton */
 .btn-envoyer {
     height: 40px;
     background-color: #1a73e8;
