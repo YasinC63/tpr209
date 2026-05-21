@@ -55,6 +55,77 @@
 </fieldset>
 
 
+<input type="checkbox" id="privacy" required>
+
+<label for="privacy" class="checkbox">
+    J'ai lu et j'accepte la politique de confidentialité du site.
+</label>
+
+    <button type="submit" class="btn-envoyer">
+        Envoyer
+    </button>
+
+</form>
+</main>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire de contact</title>
+</head>
+
+<body>
+
+<main>
+<form class="formulaire" aria-labelledby="titre-formulaire">
+
+    <h1 id="titre-formulaire">Formulaire de contact</h1>
+
+
+    <label for="pseudo">Votre pseudo *</label>
+    <input id="pseudo" type="text" required placeholder="Votre pseudo">
+
+
+    <label for="password">Votre mot de passe *</label>
+    <input id="password" type="password" required placeholder="Votre mot de passe">
+
+
+    <label for="email">Votre e-mail *</label>
+    <input id="email" type="email" required placeholder="Votre e-mail">
+
+
+    <label for="objet">Objet du message *</label>
+    <select id="objet" required>
+        <option value="">-- Choisissez une option --</option>
+        <option value="question">J'ai une question</option>
+        <option value="suggestion">Je fais une suggestion</option>
+        <option value="probleme">Je rencontre un problème</option>
+        <option value="autre">Autre</option>
+    </select>
+
+
+    <label for="message">Votre message *</label>
+    <textarea id="message" required placeholder="Votre message"></textarea>
+
+
+<fieldset class="radio-group">
+    <legend>Niveau d'urgence *</legend>
+
+    <input type="radio" id="urgent" name="urgence" value="urgent" required>
+    <label for="urgent">Urgent</label>
+
+    <input type="radio" id="normal" name="urgence" value="normal">
+    <label for="normal">Normal</label>
+
+    <input type="radio" id="lent" name="urgence" value="lent">
+    <label for="lent">Lent</label>
+</fieldset>
+
+
     <label class="checkbox">
         <input type="checkbox" required>
         J'ai lu et j'accepte la politique de confidentialité du site.
