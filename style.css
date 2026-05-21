@@ -1,57 +1,52 @@
 .formulaire {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     width: 90%;
     max-width: 400px;
     margin: auto;
 }
 
-input,
-select,
-textarea {
+/* Champs */
+input, select, textarea {
     width: 100%;
     box-sizing: border-box;
+    font-size: 16px; /* important WCAG (lisibilité) */
 }
 
-input {
-    height: 30px;
-    padding: 5px;
-}
-
-select {
-    height: 35px;
-}
-
+/* textarea */
 textarea {
-    height: 100px;
-    padding: 5px;
+    height: 120px;
 }
 
-.radio-group label {
-    display: inline-flex;
-    align-items: center;
-    margin-right: 15px;
-    gap: 5px;
+/* Focus clavier (WCAG très important) */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #1a73e8;
+    outline-offset: 2px;
 }
 
+/* radios */
+.radio-group {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* checkbox */
 .checkbox {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size:16px;
-    white-space: nowrap;
+    font-size: 14px;
 }
 
-.checkbox input {
-    width: 16px;
-    height: 16px;
-}
-
+/* bouton */
 .btn-envoyer {
-    width: 100%;
-    height : 40px;
-    background-color: #006399;
+    height: 40px;
+    background-color: #1a73e8;
     color: white;
     border: none;
     cursor: pointer;
@@ -59,6 +54,6 @@ textarea {
     border-radius: 5px;
 }
 
-.btn-envoyer:hover{
-    background-color : #004269;
+.btn-envoyer:hover {
+    background-color: #1558b0;
 }
