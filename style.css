@@ -7,6 +7,64 @@
     margin: auto;
 }
 
+
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px; 
+}
+
+
+textarea {
+    height: 120px;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #1a73e8;
+    outline-offset: 2px;
+}
+
+
+.radio-group {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+
+.btn-envoyer {
+    height: 40px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-envoyer:hover {
+    background-color: #1558b0;
+}.formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
 /* Champs */
 input, select, textarea {
     width: 100%;
